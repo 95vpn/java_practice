@@ -20,4 +20,48 @@ public class Vehiculo {
         this.disponible = false;
     }
 
+    // los métodos get y set de la clase vehiculo
+
+    public String getMatricula()
+    {
+        return this.matricula;
+    }
+
+    public String getMarca()
+    {
+        return this.marca;
+    }
+
+    public String getModelo()
+    {
+        return this.modelo;
+    }
+
+    public String getColor()
+    {
+        return this.color;
+    }
+
+    public double getTarifa()
+    {
+        return this.tarifa;
+    }
+
+    public boolean getDisponible()
+    {
+        return this.disponible;
+    }
+
+    public void setTarifa(double tarifa)
+    {
+        this.tarifa = tarifa;
+    }
+
+    public void setDisponible(boolean disponible)
+    {
+        this.disponible = disponible;
+    }
+
+
+
 }
