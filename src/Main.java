@@ -7,5 +7,6 @@ void main() {
     Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro", 80.0);
 
     System.out.println(vehiculo1.color);
+    System.out.println("Matricula: " + vehiculo1.matricula);
 
 }
