@@ -8,5 +8,13 @@ void main() {
 
     System.out.println(vehiculo1.color);
     System.out.println("Matricula: " + vehiculo1.matricula);
+    System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
+    System.out.println("color: " + vehiculo1.color);
+    System.out.println("Tarifa: " + vehiculo1.tarifa);
+
+
+    vehiculo1.setTarifa(90.0);
+    System.out.println("Matricula: " + vehiculo1.getMatricula());
+    System.out.println("Tarifa: " + vehiculo1.getTarifa());
 
 }
