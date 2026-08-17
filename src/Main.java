@@ -3,7 +3,9 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    Vehiculo vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
+    Vehiculo vehiculo1;
+    Vehiculo vehiculo3;
+    vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
     Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro", 80.0);
 
     System.out.println(vehiculo1.color);
@@ -17,4 +19,23 @@ void main() {
     System.out.println("Matricula: " + vehiculo1.getMatricula());
     System.out.println("Tarifa: " + vehiculo1.getTarifa());
 
+    if (vehiculo2 == null)
+    {
+        System.out.println("vehiculo2 es una referencia null");
+    }
+
+    if (vehiculo2 != null)
+    {
+        System.out.println("vehiculo2 está instanciado");
+    }
+
+    vehiculo3 = vehiculo1;
+
+    System.out.println("Matricula: " + vehiculo3.getMatricula());
+    System.out.println("Tarifa: " + vehiculo3.getTarifa());
+
+    vehiculo3.setTarifa(50.0);
+
+    System.out.println("Tarifa: " + vehiculo1.getTarifa());
+    System.out.println("Tarifa: " + vehiculo3.getTarifa());
 }
