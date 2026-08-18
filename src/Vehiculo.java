@@ -1,10 +1,10 @@
 public class Vehiculo {
-    String matricula;
-    String marca;
-    String modelo;
-    String color;
-    double tarifa;
-    boolean disponible;
+    private String matricula;
+    private String marca;
+    private String modelo;
+    private String color;
+    private double tarifa;
+    private boolean disponible;
 
     public Vehiculo(String matricula,
                     String marca,
