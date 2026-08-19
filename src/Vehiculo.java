@@ -22,6 +22,15 @@ public class Vehiculo {
 
     // los métodos get y set de la clase vehiculo
 
+    public String getAtributos()
+    {
+        return "Matricula: " + this.matricula +
+                " Modelo: " + this.marca + " " + this.modelo +
+                " Color: " + this.color +
+                " Tarifa: " + this.tarifa +
+                " Disponible: " + this.disponible;
+
+    }
     public String getMatricula()
     {
         return this.matricula;
