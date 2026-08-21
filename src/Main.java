@@ -8,11 +8,11 @@ void main() {
     vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
     Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro", 80.0);
 
-    System.out.println(vehiculo1.color);
-    System.out.println("Matricula: " + vehiculo1.matricula);
-    System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
-    System.out.println("color: " + vehiculo1.color);
-    System.out.println("Tarifa: " + vehiculo1.tarifa);
+    //System.out.println(vehiculo1.color);
+    //System.out.println("Matricula: " + vehiculo1.matricula);
+    //System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
+    //System.out.println("color: " + vehiculo1.color);
+    //System.out.println("Tarifa: " + vehiculo1.tarifa);
 
 
     vehiculo1.setTarifa(90.0);
@@ -38,4 +38,8 @@ void main() {
 
     System.out.println("Tarifa: " + vehiculo1.getTarifa());
     System.out.println("Tarifa: " + vehiculo3.getTarifa());
+
+    //invocación del metodo getAtributos para mostrar los datos del objeto vehiculo
+
+    System.out.println("Datos del vehiculo " + vehiculo1.getAtributos());
 }
