@@ -42,4 +42,8 @@ void main() {
     //invocación del metodo getAtributos para mostrar los datos del objeto vehiculo
 
     System.out.println("Datos del vehiculo " + vehiculo1.getAtributos());
+
+    MisVehiculos.recibirVehiculoAlquilado(vehiculo1);
+
+    System.out.println("El objeto vehiculo1 está disponible: " + vehiculo1.getDisponible());
 }
