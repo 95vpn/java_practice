@@ -24,12 +24,23 @@ public class Vehiculo {
 
     public String getAtributos()
     {
-        return "Matricula: " + this.matricula +
+        String atributos;
+        atributos = "Matricula: " + this.matricula +
                 " Modelo: " + this.marca + " " + this.modelo +
                 " Color: " + this.color +
                 " Tarifa: " + this.tarifa +
                 " Disponible: " + this.disponible;
 
+        return atributos;
+
+    }
+
+    public String getAtributos(double porcentajeDescuento)
+    {
+        return "Matrícula: " + getMatricula() + " " +
+                "Modelo: " + getMarca() + " " + getModelo() +
+                " Color: " + getColor() + " Tarifa: " + (100.0 - porcentajeDescuento)/100*tarifa +
+                " Disponible: " + getDisponible();
     }
     public String getMatricula()
     {

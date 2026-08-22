@@ -15,6 +15,7 @@ void main() {
     //System.out.println("Tarifa: " + vehiculo1.tarifa);
 
 
+    System.out.println("El objeto vehiculo1 está disponible: " + vehiculo1.getDisponible());
     vehiculo1.setTarifa(90.0);
     System.out.println("Matricula: " + vehiculo1.getMatricula());
     System.out.println("Tarifa: " + vehiculo1.getTarifa());
@@ -46,4 +47,6 @@ void main() {
     MisVehiculos.recibirVehiculoAlquilado(vehiculo1);
 
     System.out.println("El objeto vehiculo1 está disponible: " + vehiculo1.getDisponible());
+
+    System.out.println("Datos del vehiculo: " + vehiculo1.getAtributos(20.0));
 }
