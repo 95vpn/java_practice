@@ -20,6 +20,19 @@ public class Vehiculo {
         this.disponible = false;
     }
 
+    public Vehiculo(String matricula,
+                    String marca,
+                    String modelo,
+                    String color)
+    {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.tarifa = 0.0;
+        this.disponible = false;
+    }
+
     // los métodos get y set de la clase vehiculo
 
     public String getAtributos()

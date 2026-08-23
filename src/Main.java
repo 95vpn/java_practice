@@ -6,7 +6,7 @@ void main() {
     Vehiculo vehiculo1;
     Vehiculo vehiculo3;
     vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
-    Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro", 80.0);
+    Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro");
 
     //System.out.println(vehiculo1.color);
     //System.out.println("Matricula: " + vehiculo1.matricula);
@@ -49,4 +49,5 @@ void main() {
     System.out.println("El objeto vehiculo1 está disponible: " + vehiculo1.getDisponible());
 
     System.out.println("Datos del vehiculo: " + vehiculo1.getAtributos(20.0));
+    System.out.println("Datos vehiculo2: " + vehiculo2.getAtributos());
 }
