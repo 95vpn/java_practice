@@ -13,5 +13,20 @@ public class Cliente
         this.apellidos = apellidos;
     }
 
+    public String getNif()
+    {
+        return this.nif;
+    }
+
+    public String getNombre()
+    {
+        return this.nombre;
+    }
+
+    public String getApellidos()
+    {
+        return this.apellidos;
+    }
+
 }
 

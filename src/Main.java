@@ -3,11 +3,11 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    Vehiculo vehiculo1;
+    //Vehiculo vehiculo1;
     Vehiculo vehiculo3;
-    vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
+    Vehiculo vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
     Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro");
-
+    MisVehiculos.recibirVehiculoAlquilado(vehiculo2);
     //System.out.println(vehiculo1.color);
     //System.out.println("Matricula: " + vehiculo1.matricula);
     //System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
@@ -50,4 +50,15 @@ void main() {
 
     System.out.println("Datos del vehiculo: " + vehiculo1.getAtributos(20.0));
     System.out.println("Datos vehiculo2: " + vehiculo2.getAtributos());
+
+    Cliente cliente1 = new Cliente("20435624x", "Juna", "Pérez");
+    VehiculoAlquilado alquiler1 = new VehiculoAlquilado(cliente1, vehiculo1, 11, 11, 2011, 2);
+
+    System.out.println("Vehiculo alquilado");
+    System.out.println("Cliente: " +
+            alquiler1.getCliente().getNif() + " " +
+            alquiler1.getCliente().getNombre() + " " +
+            alquiler1.getCliente().getApellidos());
+
+    System.out.println("Vehiculo: " + alquiler1.getVehiculo().getMatricula());
 }
