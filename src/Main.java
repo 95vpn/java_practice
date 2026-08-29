@@ -51,6 +51,8 @@ void main() {
     System.out.println("Datos del vehiculo: " + vehiculo1.getAtributos(20.0));
     System.out.println("Datos vehiculo2: " + vehiculo2.getAtributos());
 
+    // Extensión de clases Composición
+
     Cliente cliente1 = new Cliente("20435624x", "Juna", "Pérez");
     VehiculoAlquilado alquiler1 = new VehiculoAlquilado(cliente1, vehiculo1, 11, 11, 2011, 2);
 
