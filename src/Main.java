@@ -76,4 +76,9 @@ void main() {
     System.out.println("Furgoneta: " + miFurgoneta.getAtributos());
 
     System.out.println("Turismo: " + miTurismo.getMatricula() + " " + miTurismo.getMarca() + " " + miTurismo.getModelo());
+
+    // Conversión ascendente de tipos
+    Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
+    System.out.println("Vehiculo " + miVehiculo.getAtributos());
 }
+
