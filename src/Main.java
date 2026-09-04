@@ -66,19 +66,25 @@ void main() {
 
     //polimorfismo
 
-    Turismo miTurismo = new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false);
+    //Turismo miTurismo = new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false);
     Deportivo miDeportivo = new Deportivo("4070 DEP", "Ford", "Mustang", "Rojo", 150.0, 2000);
     Furgoneta miFurgoneta = new Furgoneta("4080 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8);
 
     System.out.println("Vehiculo: " + vehiculo1.getAtributos());
-    System.out.println("Turismo: " + miTurismo.getAtributos());
+    //System.out.println("Turismo: " + miTurismo.getAtributos());
     System.out.println("Deportivo: " + miDeportivo.getAtributos());
     System.out.println("Furgoneta: " + miFurgoneta.getAtributos());
 
-    System.out.println("Turismo: " + miTurismo.getMatricula() + " " + miTurismo.getMarca() + " " + miTurismo.getModelo());
+    //System.out.println("Turismo: " + miTurismo.getMatricula() + " " + miTurismo.getMarca() + " " + miTurismo.getModelo());
 
     // Conversión ascendente de tipos
-    Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
-    System.out.println("Vehiculo " + miVehiculo.getAtributos());
+    //Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
+    //System.out.println("Vehiculo " + miVehiculo.getAtributos());
+
+    Vehiculo miTurismo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
+
+    Vehiculo miVehiculo = miTurismo;
+    System.out.println("Vehículo " +
+            miVehiculo.getAtributos());
 }
 
