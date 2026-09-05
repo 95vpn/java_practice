@@ -83,8 +83,11 @@ void main() {
 
     Vehiculo miTurismo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
 
-    Vehiculo miVehiculo = miTurismo;
-    System.out.println("Vehículo " +
-            miVehiculo.getAtributos());
+    //Vehiculo miVehiculo = miTurismo;
+    //System.out.println("Vehículo " + miVehiculo.getAtributos());
+
+    //Conversión descendente de tipos
+    Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
+    Turismo miNuevoTurismo = (Turismo) miVehiculo;
 }
 
