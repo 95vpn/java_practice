@@ -89,5 +89,12 @@ void main() {
     //Conversión descendente de tipos
     Vehiculo miVehiculo = new Turismo("4090 TUR", "Skoda", "Fabia", "Negro", 90.0, 2, true);
     Turismo miNuevoTurismo = (Turismo) miVehiculo;
+
+    System.out.println("El valor de PI ES: " + Circulo.PI);
+
+    Circulo miCirculo = new Circulo(10.0);
+
+    System.out.println("El radio del circulo es " + miCirculo.getRadio() + " SU PERIMETRO ES "
+                        + miCirculo.calcularPerimetro() + " y su area es " + miCirculo.calcularArea());
 }
 
