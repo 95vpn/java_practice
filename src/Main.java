@@ -9,7 +9,9 @@ void main() {
     //Vehiculo vehiculo1;
     int edad, diaHoy, mesHoy, añoHoy;
     diaHoy= Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-    System.out.println(diaHoy);
+    mesHoy = Calendar.getInstance().get(Calendar.MONTH);
+    añoHoy = Calendar.getInstance().get(Calendar.YEAR);
+    System.out.println("La fecha de hoy es:" + diaHoy + "/" + mesHoy + "/" + añoHoy);
     Vehiculo vehiculo3;
     Vehiculo vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
     Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "Seat", "León", "Negro");
