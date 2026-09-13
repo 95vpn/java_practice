@@ -104,5 +104,22 @@ void main() {
 
     System.out.println("El radio del circulo es " + miCirculo.getRadio() + " SU PERIMETRO ES "
                         + miCirculo.calcularPerimetro() + " y su area es " + miCirculo.calcularArea());
+
+    //***********
+    // Metodo contructor a partir de un valor de tipo simple
+    Character letra = new Character('A');
+    Integer numero = new Integer(10);
+    System.out.println("metodos" + letra + numero);
+
+    // Metodo constructor que recibe una cadena de texto y la traduce al tipo simple
+    Integer numero1 = new Integer("100");
+    System.out.println("cadena a tipo simple: " + numero1);
+
+
+    //Metodo toString que transforma el valor almacenado en una cadena
+    Integer numero2 = new Integer("100");
+    System.out.println("a una cadena: " + numero2.toString());
+
+    System.out.println("numero1 = numero2 " + numero2.equals(numero1));
 }
 
