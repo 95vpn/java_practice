@@ -121,5 +121,29 @@ void main() {
     System.out.println("a una cadena: " + numero2.toString());
 
     System.out.println("numero1 = numero2 " + numero2.equals(numero1));
+
+    // La clase String
+    String nombre = "Juan";
+    String apellidos = "Gonzalez López";
+
+    String mensaje = new String("Hola Mundo");
+
+    String hola = new String("Hola");
+    String espacio = new String(" ");
+    String mundo = new String("Mundo");
+    String holaMundo = hola + espacio + mundo;
+    System.out.println(holaMundo);
+
+    System.out.println("El texto " + holaMundo + " tiene " + holaMundo.length() + " letras.");
+
+    // Comparar cada ñetra de dos objetos
+    String nombre1 = "Angel";
+    String nombre2 = "Carlos";
+
+    System.out.println(nombre1.contentEquals(nombre2));
+
+    String año = String.valueOf(2011);
+
+    System.out.println("La primera letra de holamundo es " + holaMundo.charAt(0));
 }
 
