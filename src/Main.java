@@ -145,5 +145,28 @@ void main() {
     String año = String.valueOf(2011);
 
     System.out.println("La primera letra de holamundo es " + holaMundo.charAt(0));
+
+    // estructura de control
+    //if
+    int calificacion = 10;
+    if (calificacion == 10)
+    {
+        System.out.println("Matricula de honor");
+
+    }
+
+    //if-else
+    int numero4 = 5;
+    if(numero4 % 2 == 0)
+        System.out.println("El numero es par");
+    else
+        System.out.println("El número es impar");
+
+    if (numero4 % 2 != 0)
+        System.out.println("El numero es impar");
+    else
+        System.out.println("El número es par");
 }
+
+
 
