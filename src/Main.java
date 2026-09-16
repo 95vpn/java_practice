@@ -166,6 +166,31 @@ void main() {
         System.out.println("El numero es impar");
     else
         System.out.println("El número es par");
+
+    // Sentencia if-else
+
+    int calificacion1 = 7;
+
+    if (calificacion1 == 10)
+    {
+        System.out.println("Matricula de honor");
+        if (calificacion1 == 9)
+        {
+            System.out.println("Sobresaliente");
+            if (calificacion1 == 7 && calificacion1==8)
+            {
+                System.out.println("Notable");
+            }
+        }
+    }
+    else
+    {
+        System.out.println("Sobresaliente");
+    }
+
+
+
+
 }
 
 
