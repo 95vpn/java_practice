@@ -169,24 +169,38 @@ void main() {
 
     // Sentencia if-else
 
-    int calificacion1 = 7;
+    int calificacion1 = 4;
 
-    if (calificacion1 == 10)
-    {
+    if (calificacion1 == 10) {
         System.out.println("Matricula de honor");
-        if (calificacion1 == 9)
-        {
-            System.out.println("Sobresaliente");
-            if (calificacion1 == 7 && calificacion1==8)
-            {
-                System.out.println("Notable");
-            }
-        }
     }
     else
     {
-        System.out.println("Sobresaliente");
+        if (calificacion1 == 9) {
+            System.out.println("Sobresaliente");
+        }
+        else
+        {
+            if (calificacion1 == 7 || calificacion1==8) {
+                System.out.println("Notable");
+            }
+            else
+            {
+                if (calificacion1 == 5) {
+                    System.out.println("Aprobado");
+                }
+                else
+                {
+                    System.out.println("Suspenso");
+                }
+
+            }
+
+        }
     }
+
+
+
 
 
 
