@@ -200,9 +200,21 @@ void main() {
     }
 
 
-
-
-
+    // if-else-if
+    int calificacion2 = 2;
+    if (calificacion2 == 10){
+        System.out.println("Matricula de Honor");
+    } else if (calificacion2 == 9) {
+        System.out.println("Sobresaliente");
+    } else if (calificacion2 >= 7) {
+        System.out.println("Notable");
+    } else if (calificacion2 == 6) {
+        System.out.println("Bien");
+    } else if (calificacion2 == 5) {
+        System.out.println("Aprobado");
+    } else {
+        System.out.println("SUspenso");
+    }
 
 
 }
