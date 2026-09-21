@@ -214,6 +214,7 @@ void main() {
         System.out.println("Aprobado");
     } else {
         System.out.println("SUspenso");
+
     }
 
 
