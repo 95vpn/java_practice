@@ -218,6 +218,12 @@ void main() {
     }
 
 
+    // switch
+    int calificacion3 = 80;
+    switch (calificacion3 == 80) {
+        case 1
+    }
+
 }
 
 
