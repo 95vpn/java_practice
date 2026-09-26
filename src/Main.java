@@ -219,10 +219,34 @@ void main() {
 
 
     // switch
-    int calificacion3 = 80;
-    switch (calificacion3 == 80) {
-        case 1
+    int calificacion3 = 52;
+    int categoria;
+
+    if (calificacion3 < 80) {
+        categoria = 1;
+    } else if (calificacion3 < 120) {
+        categoria = 2;
+    } else {
+        categoria = 3;
     }
+
+    switch (categoria) {
+        case 1:
+            System.out.println("La categoria es 'C' de consultor junior");
+            break;
+
+        case 2:
+            System.out.println("La categoria es 'B' de consultor Senior");
+            break;
+
+        case 3:
+            System.out.println("La categoria es 'A' de socio");
+            break;
+
+        default:
+            System.out.println("Categoria no válida");
+    }
+
 
 }
 
