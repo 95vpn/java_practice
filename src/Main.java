@@ -248,6 +248,38 @@ void main() {
     }
 
 
+    int calificacion4 = 11;
+
+    switch (calificacion4){
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            System.out.println("Suspenso");
+            break;
+        case 5:
+            System.out.println("aprobado");
+            break;
+        case 6:
+            System.out.println("Bien");
+            break;
+        case 7:
+        case 8:
+            System.out.println("Notable");
+            break;
+        case 9:
+            System.out.println("Sobresaliente");
+            break;
+        case 10:
+            System.out.println("Matricula de Honor");
+            break;
+        default:
+            System.out.println("rt443344444");
+            break;
+    }
+
+
 }
 
 
