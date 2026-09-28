@@ -279,6 +279,13 @@ void main() {
             break;
     }
 
+    //el operador condicional
+
+    int edad1 = 16;
+    String txt;
+    txt = (edad1 >= 18) ? "Mayor de Edad" : "Menor de edad";
+    System.out.println(txt);
+
 
 }
 
