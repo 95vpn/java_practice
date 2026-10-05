@@ -299,6 +299,13 @@ void main() {
 
     System.out.println(factorial);
 
+    do {
+        factorial =factorial * i;
+        i++;
+    } while (i <= n);
+
+    System.out.println(factorial);
+
 }
 
 
