@@ -306,7 +306,8 @@ void main() {
 
     System.out.println(factorial);
 
-    for (int i=1; i<=n; i++){
+
+    for (int j=1; j<=n; j++){
         factorial = factorial*1;
     }
 
