@@ -313,10 +313,22 @@ void main() {
 
     System.out.println(factorial);
 
-    for (int k = 1; k <= 5;  k++)
-        for (int l =2; l <=4; l++)
-            for (int m=3; m<=6; m++)
+    for (int k = 1; k <= 5;  k++){
+        System.out.println(k);
+        for (int l =2; l <=4; l++){
+            System.out.println(l);
+            for (int m=3; m<=6; m++){
+                System.out.println(m);
                 System.out.println("HolaMUndo");
+            }
+
+
+        }
+
+    }
+
+
+
 
 }
 
