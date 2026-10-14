@@ -287,6 +287,7 @@ void main() {
     System.out.println(txt);
 
 
+    //while se debe utilizar cuando no se sabe el numero ed veces que se va ha repetir el bloque de sentencias
     //while
     int n = 5;
     int factorial = 1;
@@ -299,6 +300,7 @@ void main() {
 
     System.out.println(factorial);
 
+    // do-while se debe utilizar cuando el bloque de sentencias se debe ejecutar al menos una vez
     do {
         factorial =factorial * i;
         i++;
@@ -306,7 +308,7 @@ void main() {
 
     System.out.println(factorial);
 
-
+    // for se utiliza cuando se sabe el número de veces que se va ha repetir el bloque de sentencias
     for (int j=1; j<=n; j++){
         factorial = factorial*1;
     }
