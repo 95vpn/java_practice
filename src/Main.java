@@ -329,6 +329,12 @@ void main() {
 
     }
 
+    // utilice una estructura while para determinar nediante restas sucesivas si un número entero positivo es par
+    int num = 6;
+    while (num >= 2){
+
+    }
+
 
 
 
