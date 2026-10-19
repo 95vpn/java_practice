@@ -332,8 +332,16 @@ void main() {
     // utilice una estructura while para determinar nediante restas sucesivas si un número entero positivo es par
     int num = 6;
     while (num >= 2){
+        num = num -2;
 
     }
+
+    if (num == 0){
+        System.out.println("El numero es par");
+    } else {
+        System.out.println("El numero es impar");
+    }
+
 
 
 
