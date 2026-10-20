@@ -1,6 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Calendar;
+import java.util.Random;
 
 void main() {
 
@@ -8,7 +9,7 @@ void main() {
     // to see how IntelliJ IDEA suggests fixing it.
     //Vehiculo vehiculo1;
     int edad, diaHoy, mesHoy, añoHoy;
-    diaHoy= Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+    diaHoy = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
     mesHoy = Calendar.getInstance().get(Calendar.MONTH);
     añoHoy = Calendar.getInstance().get(Calendar.YEAR);
     System.out.println("La fecha de hoy es:" + diaHoy + "/" + mesHoy + "/" + añoHoy);
@@ -28,13 +29,11 @@ void main() {
     System.out.println("Matricula: " + vehiculo1.getMatricula());
     System.out.println("Tarifa: " + vehiculo1.getTarifa());
 
-    if (vehiculo2 == null)
-    {
+    if (vehiculo2 == null) {
         System.out.println("vehiculo2 es una referencia null");
     }
 
-    if (vehiculo2 != null)
-    {
+    if (vehiculo2 != null) {
         System.out.println("vehiculo2 está instanciado");
     }
 
@@ -103,7 +102,7 @@ void main() {
     Circulo miCirculo = new Circulo(10.0);
 
     System.out.println("El radio del circulo es " + miCirculo.getRadio() + " SU PERIMETRO ES "
-                        + miCirculo.calcularPerimetro() + " y su area es " + miCirculo.calcularArea());
+            + miCirculo.calcularPerimetro() + " y su area es " + miCirculo.calcularArea());
 
     //***********
     // Metodo contructor a partir de un valor de tipo simple
@@ -149,15 +148,14 @@ void main() {
     // estructura de control
     //if
     int calificacion = 10;
-    if (calificacion == 10)
-    {
+    if (calificacion == 10) {
         System.out.println("Matricula de honor");
 
     }
 
     //if-else
     int numero4 = 5;
-    if(numero4 % 2 == 0)
+    if (numero4 % 2 == 0)
         System.out.println("El numero es par");
     else
         System.out.println("El número es impar");
@@ -173,24 +171,16 @@ void main() {
 
     if (calificacion1 == 10) {
         System.out.println("Matricula de honor");
-    }
-    else
-    {
+    } else {
         if (calificacion1 == 9) {
             System.out.println("Sobresaliente");
-        }
-        else
-        {
-            if (calificacion1 == 7 || calificacion1==8) {
+        } else {
+            if (calificacion1 == 7 || calificacion1 == 8) {
                 System.out.println("Notable");
-            }
-            else
-            {
+            } else {
                 if (calificacion1 == 5) {
                     System.out.println("Aprobado");
-                }
-                else
-                {
+                } else {
                     System.out.println("Suspenso");
                 }
 
@@ -202,7 +192,7 @@ void main() {
 
     // if-else-if
     int calificacion2 = 2;
-    if (calificacion2 == 10){
+    if (calificacion2 == 10) {
         System.out.println("Matricula de Honor");
     } else if (calificacion2 == 9) {
         System.out.println("Sobresaliente");
@@ -250,7 +240,7 @@ void main() {
 
     int calificacion4 = 11;
 
-    switch (calificacion4){
+    switch (calificacion4) {
         case 0:
         case 1:
         case 2:
@@ -293,7 +283,7 @@ void main() {
     int factorial = 1;
     int i = 1;
 
-    while (i <= n){
+    while (i <= n) {
         factorial = factorial * i;
         i++;
     }
@@ -302,24 +292,24 @@ void main() {
 
     // do-while se debe utilizar cuando el bloque de sentencias se debe ejecutar al menos una vez
     do {
-        factorial =factorial * i;
+        factorial = factorial * i;
         i++;
     } while (i <= n);
 
     System.out.println(factorial);
 
     // for se utiliza cuando se sabe el número de veces que se va ha repetir el bloque de sentencias
-    for (int j=1; j<=n; j++){
-        factorial = factorial*1;
+    for (int j = 1; j <= n; j++) {
+        factorial = factorial * 1;
     }
 
     System.out.println(factorial);
 
-    for (int k = 1; k <= 5;  k++){
+    for (int k = 1; k <= 5; k++) {
         System.out.println(k);
-        for (int l =2; l <=4; l++){
+        for (int l = 2; l <= 4; l++) {
             System.out.println(l);
-            for (int m=3; m<=6; m++){
+            for (int m = 3; m <= 6; m++) {
                 System.out.println(m);
                 System.out.println("HolaMUndo");
             }
@@ -331,19 +321,25 @@ void main() {
 
     // utilice una estructura while para determinar nediante restas sucesivas si un número entero positivo es par
     int num = 6;
-    while (num >= 2){
-        num = num -2;
+    while (num >= 2) {
+        num = num - 2;
 
     }
 
-    if (num == 0){
+    if (num == 0) {
         System.out.println("El numero es par");
     } else {
         System.out.println("El numero es impar");
     }
 
 
+    Random random = new Random();
 
+    int numRand;
+    do {
+        numRand = (int) (100 * Math.random());
+        System.out.println(numRand);
+    } while (numRand != 50);
 
 
 }
