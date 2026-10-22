@@ -342,7 +342,14 @@ void main() {
     } while (numRand != 50);
 
 
-    for ()
+    int base = 2;
+    int exponente = 10;
+    int potencia = 1;
+    for (int h = 1; h <= exponente; h++ ){
+        potencia = potencia * base;
+    }
+
+    System.out.println("La potencia es: " + potencia);
 }
 
 
