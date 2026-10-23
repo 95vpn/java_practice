@@ -342,6 +342,7 @@ void main() {
     } while (numRand != 50);
 
 
+    //exponente-potecia-base
     int base = 2;
     int exponente = 10;
     int potencia = 1;
