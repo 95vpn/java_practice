@@ -343,6 +343,8 @@ void main() {
 
 
     //exponente-potecia-base
+    //base - exponente - potencia(resultado)
+    // potencia = base x base x base x base x base
     int base = 2;
     int exponente = 10;
     int potencia = 1;
