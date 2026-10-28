@@ -353,6 +353,12 @@ void main() {
     }
 
     System.out.println("La potencia es: " + potencia);
+
+    // cuando se ejecuta el break, el flujo del programa continúa en la sentencia inmediatamente posterior a la structura de repetición
+    // o al switch
+    // cuando se ejecuta el continue, se deja de ejecutar el resto del bloque se sentencias
+    // de la estructura iterativa para volver al inicio de esta.
+
 }
 
 
