@@ -354,10 +354,51 @@ void main() {
 
     System.out.println("La potencia es: " + potencia);
 
-    // cuando se ejecuta el break, el flujo del programa continúa en la sentencia inmediatamente posterior a la structura de repetición
+    // cuando se ejecuta el break, el flujo del programa continúa en la sentencia
+    // inmediatamente posterior a la structura de repetición
     // o al switch
-    // cuando se ejecuta el continue, se deja de ejecutar el resto del bloque se sentencias
+    // cuando se ejecuta el continue, se deja de ejecutar el resto del bloque
+    // de sentencias
     // de la estructura iterativa para volver al inicio de esta.
+
+    //desarrolle un programa que cuente con el número de vocales, consonantes, y espacios
+    // de una cadena de caracteres
+    //utilice un for para comparar cada una de las letras de la frase
+    //dentro del for utilice un switch para seleccionar entre vocales,consonantes y espacios
+    //las variables vocales, consonantes y espacios se inicializan a cero y se utilizan
+    //para contar el número de veces que aparecen en la frase
+    //defina una variable letra de tipo char. Almacene la letra correspondiente a la
+    // posición i de la cadena de caracteres. Utilice el metodo chartAt(i) de la clase
+    // String para copiar el valor de este caracter a la vriable letra
+
+    String frase = "contar el número de veces que aparecen en la frase";
+    int vocales = 0;
+    int consonantes = 0;
+    int espacios = 0;
+    char letra1;
+    for (int j = 0; j < frase.length(); j++) {
+        letra1 = frase.charAt(j);
+        switch (letra1){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U': vocales++;
+                      break;
+            case ' ': espacios++;
+                      break;
+            default: consonantes++;
+                    break;
+        }
+    }
+
+    System.out.println("La frase " + frase + " tiene " + vocales + " vocales "
+                        + consonantes + " consonantes y " + espacios + " espacios. " );
 
 }
 
