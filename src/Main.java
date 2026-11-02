@@ -339,6 +339,8 @@ void main() {
     do {
         numRand = (int) (100 * Math.random());
         System.out.println(numRand);
+        if(numRand == 25)
+            break;
     } while (numRand != 50);
 
 
