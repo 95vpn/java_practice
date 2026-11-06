@@ -402,6 +402,18 @@ void main() {
     System.out.println("La frase " + frase + " tiene " + vocales + " vocales "
                         + consonantes + " consonantes y " + espacios + " espacios. " );
 
+    // uso del continue en un for
+    //Desarrole un programa que muestre por consola los numeros pares entre 2 y 10.
+    // Utilice un for para valores de i de 1 a 10 y aplique la sentencia continue
+    // para interrunpir la ejecución de las iteraciones impares.
+
+    for (int m = 1; m<= 10; m++){
+        if(m % 2 != 0)
+            continue;
+
+        System.out.println("Numeros pares: " + m);
+    }
+
 }
 
 
