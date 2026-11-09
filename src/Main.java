@@ -414,6 +414,12 @@ void main() {
         System.out.println("Numeros pares: " + m);
     }
 
+    //Estructuras de almacenamiento
+    //Arrays permite almacenar muchos objetos de la misma clase e identificarlos
+    //con el mismo nombre.
+
+
+
 }
 
 
