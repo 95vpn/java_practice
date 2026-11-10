@@ -419,6 +419,12 @@ void main() {
     //con el mismo nombre.
 
 
+    //int[] numerosEnteros; array de tipo int
+    // double[] numerosReales; array de tipo double
+    //String[] nombres; array de tipo String
+    //Object[] objetos; array de clase object
+    // Vehiculo[] vehiculos; array de la clase Vehiculo
+    //Turismo[] turismos; array de la clase Turismo
 
 }
 
