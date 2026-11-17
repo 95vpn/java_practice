@@ -426,6 +426,17 @@ void main() {
     // Vehiculo[] vehiculos; array de la clase Vehiculo
     //Turismo[] turismos; array de la clase Turismo
 
+    // además de declarar un array es necesario indicar el números de elementps
+    // que va a almacenar
+    // antes de hacer referencia a los elementos del array es necesario instanciar el
+    // objeto
+    // Cunado se instancia un objetos del array  se asigna un espacio de memoria
+    // para almacenar los elementos del array
+    // es necesario saber el número de elementos que va a almacenar
+
+    // nombres = new String[100];
+    // vehiculos = new Vehiculos[50];
+
 }
 
 
