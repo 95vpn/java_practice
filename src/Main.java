@@ -437,6 +437,17 @@ void main() {
     // nombres = new String[100];
     // vehiculos = new Vehiculos[50];
 
+    // se puede inicializar al momento de la declaración
+    // int numerosEnteros = new int[10];
+    // String nombres = new String[100];
+    // Vehiculo[] vehiculos = new Vehiculo[50];
+    // Turismo[] turismos = new Turismos[50];
+
+    // un array tambien se puiede inicializar indicando la lista de valores que va almacenar
+
+    String[] diasLaborables = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes"};
+
+
 }
 
 
