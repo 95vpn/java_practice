@@ -446,6 +446,14 @@ void main() {
     // un array tambien se puiede inicializar indicando la lista de valores que va almacenar
 
     String[] diasLaborables = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes"};
+    int[] enteros1 = {0, 1, 2, 3, 4, 5, 6, 7, 8,9,10};
+
+    // para hacer referencia a cada elemento de un array es necesario indicar
+    // la posición que ocupa en la estructura de almacenamiento.
+
+    int[] notas = {4, 9, 7, 5,10};
+    for (int b = 0; b < notas.length - 1; b++)
+        System.out.println("notas["+ b +"] es " + notas[b]);
 
 
 }
